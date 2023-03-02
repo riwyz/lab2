@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import MyName from "./Components/MyName/MyName";
+import Counter from "./Components/Counter/Counter";
+import ToDoList from "./Components/ToDoList";
 
+
+const Func = () =>{
+  return <div>
+
+  </div>
+}
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload. Данила олух
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Counter></Counter>
+      <ToDoList></ToDoList>
     </div>
   );
 }
